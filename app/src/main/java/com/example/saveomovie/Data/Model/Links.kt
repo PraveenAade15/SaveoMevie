@@ -1,4 +1,4 @@
-package com.example.saveomovie.Data.VelloObject
+package com.example.saveomovie.Data.Model
 
 
 import com.google.gson.annotations.SerializedName

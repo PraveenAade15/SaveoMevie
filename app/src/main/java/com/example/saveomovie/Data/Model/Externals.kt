@@ -1,4 +1,4 @@
-package com.example.saveomovie.Data.VelloObject
+package com.example.saveomovie.Data.Model
 
 
 import com.google.gson.annotations.SerializedName
@@ -9,5 +9,5 @@ data class Externals(
     @SerializedName("thetvdb")
     val thetvdb: Int,
     @SerializedName("tvrage")
-    val tvrage: Int
+    val tvrage: Any
 )

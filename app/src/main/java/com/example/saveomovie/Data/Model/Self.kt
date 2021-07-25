@@ -1,9 +1,9 @@
-package com.example.saveomovie.Data.VelloObject
+package com.example.saveomovie.Data.Model
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Previousepisode(
+data class Self(
     @SerializedName("href")
     val href: String
 )

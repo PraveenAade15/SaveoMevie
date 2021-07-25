@@ -1,9 +1,9 @@
-package com.example.saveomovie.Data.VelloObject
+package com.example.saveomovie.Data.Model
 
 
 import com.google.gson.annotations.SerializedName
 
-data class MovieDetailsItem(
+data class Show(
     @SerializedName("averageRuntime")
     val averageRuntime: Int,
     @SerializedName("dvdCountry")
@@ -23,7 +23,7 @@ data class MovieDetailsItem(
     @SerializedName("name")
     val name: String,
     @SerializedName("network")
-    val network: Network,
+    val network: Any,
     @SerializedName("officialSite")
     val officialSite: String,
     @SerializedName("premiered")
