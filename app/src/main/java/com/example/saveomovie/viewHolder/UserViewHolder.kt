@@ -8,10 +8,4 @@ import com.example.saveomovie.Data.Model.Show
 
 class UserViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
-    fun setData(show:Show) {
-        view.apply {
-            Glide.with(Image)
-
-        }
-    }
 }
