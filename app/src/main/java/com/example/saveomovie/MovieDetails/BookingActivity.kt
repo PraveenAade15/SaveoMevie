@@ -1,12 +1,12 @@
-package com.example.saveomovie
+package com.example.saveomovie.MovieDetails
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.saveomovie.R
 
-class MainActivity : AppCompatActivity() {
+class BookingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_booking)
     }
-
 }
