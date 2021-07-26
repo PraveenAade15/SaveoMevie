@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface ApiClient {
     @GET("search/shows?q=god")
-    fun getData(): Call<List<DetailsItem>>
+     suspend fun getData(): Call<List<DetailsItem>>
 
 }

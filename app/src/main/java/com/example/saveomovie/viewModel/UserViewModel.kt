@@ -17,12 +17,13 @@ class UserViewModel : ViewModel(), Callback<DetailsItem> {
     private val mutableLiveData = MutableLiveData<Show>()
 
     val liveData: LiveData<Show> = mutableLiveData
+
     /**
      * This method is called once the response is received from the API
      */
     override fun onResponse(call: Call<DetailsItem>, response: Response<DetailsItem>) {
         response.body()?.let {
-            mutableLiveData.value = Show.Success(it.data as List<Show>)
+            mutableLiveData.value = Show().Success(it.data as List<Show>)
         }
     }
 
