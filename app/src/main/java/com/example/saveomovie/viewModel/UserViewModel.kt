@@ -12,7 +12,7 @@ import retrofit2.Response
 
 class UserViewModel : ViewModel(), Callback<DetailsItem> {
 
-    private val repository = UserRepository(this)
+    private val repository = UserRepository(this).apiClient.getData().isExecuted
 
     private val mutableLiveData = MutableLiveData<Show>()
 
